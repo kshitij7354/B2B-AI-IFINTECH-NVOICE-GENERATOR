@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODEL</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+  <section>
+    <div class="left">
+      <img src="abclogo.png" alt="">
+    </div>
+    <div class="middle">
+      <img src="logo.png">
+    </div>
+
+  </section>
+  <br>
+
+
+
+
+
+  <section class="invoice">
+    <h5>
+      <h3>Invoice List</h3>
+    </h5>
+  </section>
+
+
+
+
+  <section class="table-container">
+    <div class="buttons">
+
+      <button class="button1">+Add</button>
+      <button class="button2">Edit</button>
+      <button class="button3">-Delete</button>
+    </div>
+    <table class="table-items">
+      <tr>
+        <th><input type="checkbox"></th>
+        <th>Customer Name</th>
+        <th>Customer #</th>
+        <th>Invoice #</th>
+        <th>Invoice Amount</th>
+        <th>Due Date</th>
+        <th>Age</th>
+        <th>Predicted Payment Date</th>
+        <th>Notes</th>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr> 
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <div class="modal-bg1">
+    <div class="modal1">
+      <h2 style="text-align: center;">Add Invoice</h2>
+      <hr>
+      <form action="#">
+        <span>
+          <label for="name"> Customer Name:</label>
+          <input type="text" id="name" name="name">
+        </span>
+        <span>
+          <label for="number"> Customer No:</label>
+          <input type="text" id="number" name="Customer No.">
+        </span>
+        <span>
+          <label for="invoiceno"> Invoice Number:</label>
+          <input type="text" id="invoiceno">
+        </span>
+        <span>
+          <label for="invoiceam"> Invoice Amount:</label>
+          <input type="text" id="invoiceam">
+        </span>
+        <span>
+          <label for="date"> Due Date:</label>
+          <input type="date" id="date">
+        </span>
+        <label for="notes"> Notes</label>
+        <textarea name="Notes" id="notes" cols="5" rows="5"></textarea>
+        <input type="reset" value="clear" class="clear">
+      </form>
+      
+      <span class="modal-close1">X</span>
+      <span>
+        <button class="add">
+          Add
+        </button>
+      </span>
+      <a onclick="javascript:window.location.reload();"  style="color: white;" class="cancel">Cancel</a>
+    </div>
+  </div>
+
+  <div class="modal-bg2">
+    <div class="modal2">
+      <h2 style="text-align: center;">Edit Invoice</h2>
+      <hr>
+      <form action="#">
+        <span>
+          <label for="invoiceam">Invoice Amount:</label>
+          <input type="text" id="invoiceam">
+        </span>
+  
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" cols="8" rows="8"></textarea>
+       <span class="modal-close2">X</span>
+       <input type="reset" value="clear" class="clear">
+      </form>
+       <span>
+      <button class="edit">
+        Edit
+      </button>
+     </span>
+      <a onclick="javascript:window.location.reload();"  style="color: white;" class="cancel">Cancel</a>
+    </div>
+  </div>
+  <div class="modal-bg3">
+    <div class="modal3">
+      <h2 style="text-align: center;">Delete Record(s)?</h2>
+      <span class="modal-close3">X</span>
+      <p>You'll lose your record(s) after this action. We can't recover them once you delete. 
+        <br><br>
+        Are you sure you want to permanently delete them?</p>
+     <span>
+      <button class="delete">
+        Delete
+      </button>
+      </span>
+      <a onclick="javascript:window.location.reload();"  style="color: white;" class="cancel">Cancel</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
